@@ -17,6 +17,8 @@ public class App extends Application {
     private static Context mContext;
     private static List<Activity> mActivities = new ArrayList<>();
 
+
+
     @Override
     public void onCreate() {
         super.onCreate();

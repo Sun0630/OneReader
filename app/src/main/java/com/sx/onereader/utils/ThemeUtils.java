@@ -6,8 +6,11 @@ import com.sx.onereader.R;
 
 
 /**
- * Created by tangqi on 10/5/15.
+ * @Author sunxin
+ * @Date 2017/5/5 16:42
+ * @Description  改变主题
  */
+
 public class ThemeUtils {
 
     public static boolean isLight = true;
