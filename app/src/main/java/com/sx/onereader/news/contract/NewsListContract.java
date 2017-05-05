@@ -1,0 +1,25 @@
+package com.sx.onereader.news.contract;
+
+import com.sx.onereader.base.BasePresenter;
+import com.sx.onereader.base.BaseView;
+import com.sx.onereader.news.bean.NewsBean;
+
+import java.util.List;
+
+/**
+ * Created by Administrator on 2017/3/15.
+ */
+public interface NewsListContract {
+    interface View extends BaseView<Presenter>{
+        void showLoading();
+        void stopLoading();
+        void showError();
+        void showResult(List<NewsBean.ShowapiResBodyBean.PagebeanBean.ContentlistBean> list);
+    }
+    interface  Presenter extends BasePresenter{
+        void request(String type,int page,String time,boolean clearing);
+        void loadMore(String type,String time);
+        void refresh(String type,String time);
+        void showDetail(int position);
+    }
+}

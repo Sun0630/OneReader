@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">OneReader</string>
+    <string name="navigation_drawer_open">打开菜单</string>
+    <string name="navigation_drawer_close">关闭菜单</string>
+    <string name="title_settings">设置</string>
+
+
+    <!-- 设置 -->
+    <string name="settings_version">版本更新</string>
+    <string name="settings_version_code">版本:</string>
+    <string name="settings_auto_update">自动更新应用</string>
+    <string name="settings_auto_push">推送精选内容</string>
+    <string name="settings_general_settings">常规</string>
+    <string name="settings_push_settings">推送</string>
+    <string name="setting_enable_cahce">允许缓存</string>
+    <string name="cache_is_enable">当前读取的是缓存</string>
+    <string name="cache_is_disable">当前未设置缓存</string>
+    <string name="delete_cache">清除缓存</string>
+    <string name="way_to_get_data">数据获取方式</string>
+    <string name="dialog_way_to_get_data">选择</string>
+    <string name="default_way_to_get_data">http+</string>
+    <string name="men_action_refresh">刷新</string>
+    <string name="men_action_read_mode">切换模式</string>
+    <string name="menu_action_feedback">用户反馈</string>
+</resources>
