@@ -37,7 +37,7 @@ public class WeatherPresenter implements WeatherContract.Presenter {
 
     @Override
     public void loadLocation() {
-       mLocationClient = new AMapLocationClient(context);
+        mLocationClient = new AMapLocationClient(context);
         mLocationOption = new AMapLocationClientOption();
         mLocationOption.setLocationMode(AMapLocationClientOption.AMapLocationMode.Hight_Accuracy);
         mLocationOption.setOnceLocation(true);

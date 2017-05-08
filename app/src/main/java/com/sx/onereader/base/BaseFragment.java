@@ -5,11 +5,11 @@ import android.support.v4.app.Fragment;
 import com.orhanobut.logger.Logger;
 
 /**
- * time:2017/4/6
- * Created by w77996
- * Github:https://github.com/w77996
- * CSDN:http://blog.csdn.net/w77996?viewmode=contents
+ * @Author sunxin
+ * @Date 2017/5/5 19:05
+ * @Description
  */
+
 public class BaseFragment extends Fragment {
     private boolean isViewPrepared; // 标识fragment视图已经初始化完毕
     private boolean hasFetchData; // 标识已经触发过懒加载数据

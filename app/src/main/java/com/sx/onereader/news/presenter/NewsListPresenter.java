@@ -38,15 +38,14 @@ public class NewsListPresenter implements NewsListContract.Presenter {
 
     @Override
     public void request(String type, int page, String time, final boolean clearing) {
-       // Logger.d("dddddddddddddddddddddddddddddddddddd");
         if(clearing){
             view.showLoading();
         }
         HttpUtils.getInstance().create(ApiService.class,Api.SHOWAPI_NEWS)
                 .getNews(type,page,time)
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Consumer<NewsBean>() {
+                .subscribeOn(Schedulers.io())//请求在子线程
+                .observeOn(AndroidSchedulers.mainThread())//在主线程更新UI
+                .subscribe(new Consumer<NewsBean>() {//订阅
                     @Override
                     public void accept(NewsBean newsBean) throws Exception {
                         if(clearing){
@@ -55,7 +54,6 @@ public class NewsListPresenter implements NewsListContract.Presenter {
                         for(NewsBean.ShowapiResBodyBean.PagebeanBean.ContentlistBean contentlistBean:newsBean.getShowapi_res_body().getPagebean().getContentlist()){
                             list.add(contentlistBean);
                         }
-                     //   Logger.d(""+list.size());
                         view.showResult(list);
                         view.stopLoading();
                     }
