@@ -20,7 +20,7 @@ import com.sx.onereader.utils.interfaze.OnRecyclerViewOnClickListener;
 import java.util.List;
 
 /**
- * Created by Administrator on 2017/3/13.
+ * Created by sunxin on 2017/3/13.
  */
 public class GuokrFragment extends Fragment implements GuokrContract.View {
     private GuokrContract.Presenter presenter;

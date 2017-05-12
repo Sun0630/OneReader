@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by Administrator on 2017/3/15.
+ * Created by sunxin on 2017/3/15.
  */
 public class DetailFragment extends Fragment {
     public static DetailFragment newInstance(){

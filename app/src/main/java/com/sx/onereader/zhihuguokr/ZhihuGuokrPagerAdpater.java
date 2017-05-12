@@ -9,7 +9,7 @@ import com.sx.onereader.zhihuguokr.guokr.GuokrFragment;
 import com.sx.onereader.zhihuguokr.zhihudaily.ZhihuDailyFragment;
 
 /**
- * Created by Administrator on 2017/3/13.
+ * Created by sunxin on 2017/3/13.
  */
 public class ZhihuGuokrPagerAdpater extends FragmentPagerAdapter{
     private ZhihuDailyFragment zhihuDailyFragment;

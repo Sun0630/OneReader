@@ -11,8 +11,8 @@ import java.util.List;
 
 /**
  * @Author sunxin
- * @Date 2017/5/4 23:21
- * @Description
+ * @Date 2017/4/4 23:21
+ * @Description 基类
  */
 
 public class BaseActivity extends AppCompatActivity{

@@ -20,7 +20,7 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
 /**
- * Created by Administrator on 2017/3/13.
+ * Created by sunxin on 2017/3/13.
  */
 public class GuokrPresenter implements GuokrContract.Presenter {
     private Context mContext;

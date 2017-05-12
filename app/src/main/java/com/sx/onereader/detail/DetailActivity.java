@@ -24,7 +24,7 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
 /**
- * Created by Administrator on 2017/3/15.
+ * Created by sunxin on 2017/3/15.
  */
 public class DetailActivity extends AppCompatActivity {
     WebView webView;
@@ -110,23 +110,11 @@ public class DetailActivity extends AppCompatActivity {
 
     }
 
-    private void swithcType(String mType) {
-
-    }
 
     private class webViewClient extends WebViewClient {
+        //设置不跳转系统自带的浏览器
         @Override
-
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
-
-          /*  CustomTabsIntent.Builder customTabsIntent = new CustomTabsIntent.Builder()
-                    .setToolbarColor(getApplication().getResources().getColor(R.color.colorAccent))
-                    .setShowTitle(true);
-           // CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
-            CustomTabsIntent  c= customTabsIntent.build();
-            c.launchUrl(DetailActivity.this, Uri.parse(url));*/
-            //如果不需要其他对点击链接事件的处理返回true，否则返回false
-           // DetailActivity.this.startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse(url)));
             webView.loadUrl(url);
             return true;
 

@@ -4,7 +4,7 @@ import com.sx.onereader.base.BasePresenter;
 import com.sx.onereader.base.BaseView;
 
 /**
- * Created by Administrator on 2017/3/15.
+ * Created by sunxin on 2017/3/15.
  */
 interface  DetailContract {
     interface View extends BaseView<Presenter>{

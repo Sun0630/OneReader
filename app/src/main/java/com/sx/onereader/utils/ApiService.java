@@ -16,7 +16,7 @@ import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 /**
- * Created by Administrator on 2017/3/13.
+ * Created by sunxin on 2017/3/13.
  */
 public interface ApiService {
 

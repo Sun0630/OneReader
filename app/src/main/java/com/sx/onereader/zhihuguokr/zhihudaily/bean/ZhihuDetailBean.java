@@ -3,7 +3,7 @@ package com.sx.onereader.zhihuguokr.zhihudaily.bean;
 import java.util.List;
 
 /**
- * Created by Administrator on 2017/3/16.
+ * Created by sunxin on 2017/3/16.
  */
 public class ZhihuDetailBean {
 

@@ -9,12 +9,7 @@ import com.sx.onereader.R;
 
 import java.lang.reflect.Field;
 
-/**
- * time:2017/3/28
- * Created by w77996
- * Github:https://github.com/w77996
- * CSDN:http://blog.csdn.net/w77996?viewmode=contents
- */
+
 public class SystemUtils {
     /**
      * 获取手机屏幕高度

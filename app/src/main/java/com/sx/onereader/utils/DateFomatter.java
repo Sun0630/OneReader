@@ -7,7 +7,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
- * Created by Administrator on 2017/3/13.
+ * Created by sunxin on 2017/3/13.
  */
 public class DateFomatter {
     /**

@@ -1,7 +1,7 @@
 package com.sx.onereader.weather;
 
 /**
- * Created by Administrator on 2017/3/29.
+ * Created by sunxin on 2017/3/29.
  */
 public class CityFomat {
 

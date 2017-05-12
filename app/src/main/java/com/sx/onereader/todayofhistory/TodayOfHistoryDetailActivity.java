@@ -23,7 +23,7 @@ import com.sx.onereader.todayofhistory.presenter.TodayOfHistoryDetailPresenter;
 import com.sx.onereader.utils.ThemeUtils;
 
 /**
- * Created by Administrator on 2017/3/27.
+ * Created by sunxin on 2017/3/27.
  */
 public class TodayOfHistoryDetailActivity extends AppCompatActivity implements TodayOfHistoryDetailContract.View{
     ImageView imageView;

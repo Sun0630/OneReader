@@ -62,6 +62,7 @@ public class BookInfoActivity extends AppCompatActivity {
         isbnBook= (ISBNBookBean) it.getSerializableExtra("book");
         ActionBar bar=getSupportActionBar();
         bar.setTitle("书籍详情");
+
         bar.setDisplayHomeAsUpEnabled(true);
         //初始化数据库
         sqlHelper=new BookSqlHelper(this,"book.db",null,1);

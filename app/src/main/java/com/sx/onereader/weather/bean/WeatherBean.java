@@ -1,7 +1,7 @@
 package com.sx.onereader.weather.bean;
 
 /**
- * Created by Administrator on 2017/3/16.
+ * Created by sunxin on 2017/3/16.
  */
 public class WeatherBean {
 

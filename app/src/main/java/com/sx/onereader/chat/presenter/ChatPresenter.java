@@ -14,7 +14,7 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
 /**
- * Created by Administrator on 2017/3/17.
+ * Created by sunxin on 2017/3/17.
  */
 public class ChatPresenter implements ChatContract.Presenter {
 

@@ -23,7 +23,7 @@ import io.reactivex.schedulers.Schedulers;
 
 
 /**
- * Created by Administrator on 2017/3/11.
+ * Created by sunxin on 2017/3/11.
  */
 public class ZhihuDailyPresenter implements ZhihuDailyContract.Presenter {
 

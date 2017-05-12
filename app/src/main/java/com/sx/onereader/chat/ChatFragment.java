@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Administrator on 2017/3/16.
+ * Created by sunxin on 2017/3/16.
  */
 public class ChatFragment extends Fragment implements ChatContract.View {
     private RecyclerView recyclerView;

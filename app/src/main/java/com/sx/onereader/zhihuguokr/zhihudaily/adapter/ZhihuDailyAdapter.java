@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Administrator on 2017/3/13.
+ * Created by sunxin on 2017/3/13.
  */
 public class ZhihuDailyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private Context mContext;

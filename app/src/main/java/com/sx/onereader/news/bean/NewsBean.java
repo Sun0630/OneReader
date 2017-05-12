@@ -3,7 +3,7 @@ package com.sx.onereader.news.bean;
 import java.util.List;
 
 /**
- * Created by Administrator on 2017/3/14.
+ * Created by sunxin on 2017/3/14.
  */
 public class NewsBean {
 

@@ -13,7 +13,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
- * Created by Administrator on 2017/3/13.
+ * Created by sunxin on 2017/3/13.
  */
 public class HttpUtils {
     private static HttpUtils mHttpUtils;
@@ -47,8 +47,8 @@ public class HttpUtils {
         return  new Retrofit.Builder()
                 .baseUrl(url)
                 .client(mBuilder.build())
-                .addConverterFactory(GsonConverterFactory.create())
-                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                .addConverterFactory(GsonConverterFactory.create())//添加Gson支持
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())//添加RXJava支持
                 .build()
                 .create(service);
     }

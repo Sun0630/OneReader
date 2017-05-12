@@ -21,7 +21,7 @@ import com.sx.onereader.utils.interfaze.OnRecyclerViewOnClickListener;
 import java.util.List;
 
 /**
- * Created by Administrator on 2017/3/14.
+ * Created by sunxin on 2017/3/14.
  */
 public class TodayOfHistoryFragment extends Fragment implements TodayOfHistoryContract.View{
 

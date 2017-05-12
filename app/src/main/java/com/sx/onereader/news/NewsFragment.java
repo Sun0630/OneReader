@@ -14,7 +14,7 @@ import com.sx.onereader.R;
 import com.sx.onereader.news.adapter.NewsPagerAdapter;
 
 /**
- * Created by Administrator on 2017/3/14.
+ * Created by sunxin on 2017/3/14.
  */
 public class NewsFragment extends Fragment {
 
@@ -56,7 +56,7 @@ public class NewsFragment extends Fragment {
         tabLayout.setTabGravity(TabLayout.GRAVITY_CENTER);
         tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
         viewPager = (ViewPager)view.findViewById(R.id.fragment_main_viewpager);
-        viewPager.setOffscreenPageLimit(4);
+        viewPager.setOffscreenPageLimit(4);//设置预加载的页数
         floatingActionButton = (FloatingActionButton)view.findViewById(R.id.fragment_main_fab);
         floatingActionButton.hide();
         NewsPagerAdapter newsPagerAdapter = new NewsPagerAdapter(getChildFragmentManager());

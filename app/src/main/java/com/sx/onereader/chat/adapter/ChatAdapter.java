@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Administrator on 2017/3/17.
+ * Created by sunxin on 2017/3/17.
  */
 public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private final Context context;

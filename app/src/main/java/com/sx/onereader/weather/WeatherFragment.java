@@ -27,7 +27,7 @@ import com.zaaach.citypicker.CityPickerActivity;
 import static android.app.Activity.RESULT_OK;
 
 /**
- * Created by Administrator on 2017/3/27.
+ * Created by sunxin on 2017/3/27.
  */
 public class WeatherFragment extends Fragment implements WeatherContract.View {
 

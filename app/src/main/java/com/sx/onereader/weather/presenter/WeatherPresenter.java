@@ -20,7 +20,7 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
 /**
- * Created by Administrator on 2017/3/16.
+ * Created by sunxin on 2017/3/16.
  */
 public class WeatherPresenter implements WeatherContract.Presenter {
 

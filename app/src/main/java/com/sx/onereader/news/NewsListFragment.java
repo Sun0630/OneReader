@@ -25,7 +25,7 @@ import com.sx.onereader.utils.DateFomatter;
 import java.util.List;
 
 /**
- * Created by Administrator on 2017/3/15.
+ * Created by sunxin on 2017/3/15.
  */
 public class NewsListFragment extends BaseFragment implements NewsListContract.View {
 
@@ -40,6 +40,7 @@ public class NewsListFragment extends BaseFragment implements NewsListContract.V
     private boolean isPreper;// 标识fragment视图已经初始化完毕
     private boolean hasFetchData;// 标识已经触发过懒加载数据
     private int pager =1;
+
     public static NewsListFragment getInstance(String type){
         Bundle args = new Bundle();
         NewsListFragment fragment = new NewsListFragment();
@@ -98,15 +99,6 @@ public class NewsListFragment extends BaseFragment implements NewsListContract.V
         return view;
     }
 
-   /* @Override
-    public void setUserVisibleHint(boolean isVisibleToUser) {
-        super.setUserVisibleHint(isVisibleToUser);
-        if (getUserVisibleHint()&&isPreper) {
-            DateFomatter dateFomatter = new DateFomatter();
-//        Logger.d("dddddddddddddddddddddddddddddddddddd");
-            presenter.request(mType,1,dateFomatter.NewsDateFormat(),true);
-        }
-    }*/
     @Override
     public void showLoading() {
         mSwipeRefreshLayout.post(new Runnable() {
@@ -159,13 +151,6 @@ public class NewsListFragment extends BaseFragment implements NewsListContract.V
         }
     }
 
-/*    @Override
-    public void onResume() {
-        super.onResume();
-        DateFomatter dateFomatter = new DateFomatter();
-//        Logger.d("dddddddddddddddddddddddddddddddddddd");
-        presenter.request(mType,1,dateFomatter.NewsDateFormat(),true);
-    }*/
 
     @Override
     public void setPresenter(NewsListContract.Presenter presenter) {

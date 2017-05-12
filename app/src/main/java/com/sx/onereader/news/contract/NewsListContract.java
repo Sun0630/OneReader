@@ -7,7 +7,7 @@ import com.sx.onereader.news.bean.NewsBean;
 import java.util.List;
 
 /**
- * Created by Administrator on 2017/3/15.
+ * Created by sunxin on 2017/3/15.
  */
 public interface NewsListContract {
     interface View extends BaseView<Presenter>{

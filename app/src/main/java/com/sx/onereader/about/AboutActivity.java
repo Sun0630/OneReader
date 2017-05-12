@@ -14,7 +14,7 @@ import com.vansuita.materialabout.views.AboutView;
 import java.util.List;
 
 /**
- * Created by Administrator on 2017/3/17.
+ * Created by sunxin on 2017/3/17.
  */
 public class AboutActivity extends AppCompatActivity {
     private Toolbar mToolbar;
@@ -22,12 +22,7 @@ public class AboutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
-    /*    mToolbar = (Toolbar)findViewById(R.id.about_toolbar);
-        setSupportActionBar(mToolbar);
-        ActionBar actionBar = getSupportActionBar();
-        //mToolbar.setTitle("设置");
-        actionBar.setTitle("关于");
-        if (actionBar != null) actionBar.setDisplayHomeAsUpEnabled(true);*/
+
         LinearLayout layoutParams = (LinearLayout)findViewById(R.id.aboutView);
         LinearLayout.LayoutParams p = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,

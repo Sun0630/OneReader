@@ -1,7 +1,7 @@
 package com.sx.onereader.utils;
 
 /**
- * Created by Administrator on 2017/3/13.
+ * Created by sunxin on 2017/3/13.
  */
 public class Api {
     public static final String ZHIHU_NEWS = "http://news-at.zhihu.com/";

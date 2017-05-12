@@ -18,7 +18,7 @@ import com.sx.onereader.zhihuguokr.zhihudaily.ZhihuDailyFragment;
 import com.sx.onereader.zhihuguokr.zhihudaily.ZhihuDailyPresenter;
 
 /**
- * Created by Administrator on 2017/3/11.
+ * Created by sunxin on 2017/3/11.
  */
 public class ZhihuGuokrMainFragment extends Fragment {
     private Context mContext;

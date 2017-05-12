@@ -7,7 +7,7 @@ import com.sx.onereader.zhihuguokr.zhihudaily.bean.ZhihuDailyBean;
 import java.util.List;
 
 /**
- * Created by Administrator on 2017/3/11.
+ * Created by sunxin on 2017/3/11.
  */
 public interface ZhihuDailyContract {
     interface View extends BaseView<Presenter>{

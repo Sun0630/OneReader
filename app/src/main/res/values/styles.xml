@@ -82,7 +82,7 @@
     <!-- ToolBar菜单样式 -->
     <style name="ToolbarTheme" parent="AppBaseTheme">
         <item name="actionMenuTextColor">@color/white</item> <!--  敲定颜色-->
-        <item name="android:textSize">18sp</item> <!--  搞掂字体大小-->
+        <item name="android:textSize">18sp</item> <!--  字体大小-->
     </style>
     <color name="md_white_1000">#ffffff</color>
     <color name="white">#ffffff</color>

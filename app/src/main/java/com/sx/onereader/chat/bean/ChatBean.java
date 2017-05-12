@@ -1,7 +1,7 @@
 package com.sx.onereader.chat.bean;
 
 /**
- * Created by Administrator on 2017/3/17.
+ * Created by sunxin on 2017/3/17.
  */
 public class ChatBean  {
 

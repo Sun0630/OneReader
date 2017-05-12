@@ -5,7 +5,7 @@ import com.sx.onereader.base.BaseView;
 import com.sx.onereader.chat.bean.ChatMsgBean;
 
 /**
- * Created by Administrator on 2017/3/16.
+ * Created by sunxin on 2017/3/16.
  */
 public interface ChatContract {
     interface View extends BaseView<Presenter>{
