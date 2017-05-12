@@ -5,8 +5,11 @@ import com.sx.onereader.base.BaseView;
 import com.sx.onereader.weather.bean.WeatherBean;
 
 /**
- * Created by Administrator on 2017/3/16.
+ * @Author sunxin
+ * @Date 2017/4/8 22:03
+ * @Description
  */
+
 public interface WeatherContract  {
     interface View extends BaseView<Presenter>{
         void showLoading();

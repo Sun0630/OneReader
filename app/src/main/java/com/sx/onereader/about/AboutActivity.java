@@ -65,17 +65,6 @@ public class AboutActivity extends AppCompatActivity {
         List<Item> actions = aboutBuilder.getActions();
         List<Item> links = aboutBuilder.getActions();
 
-
-       /* View lastLinkView = view.findItem(builder.getLastLink());
-        View lastActionView = view.findItem(builder.getLastAction());*/
     }
-   /* @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            onBackPressed();
-            return true;
-        } else {
-            return super.onOptionsItemSelected(item);
-        }
-    }*/
+
 }

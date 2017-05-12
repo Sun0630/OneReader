@@ -30,6 +30,7 @@ public class ZhihuDailyPresenter implements ZhihuDailyContract.Presenter {
     private ZhihuDailyContract.View view;
     private Context mContext;
     private List<ZhihuDailyBean.StoriesBean> list = new ArrayList<ZhihuDailyBean.StoriesBean>();
+
     public ZhihuDailyPresenter(Context context, ZhihuDailyContract.View view) {
         this.mContext = context;
         this.view = view;
@@ -40,35 +41,35 @@ public class ZhihuDailyPresenter implements ZhihuDailyContract.Presenter {
     @Override
     public void requestData(long date, final boolean clearing) {
         DateFomatter dateFomatter = new DateFomatter();
-        if (clearing){
+        if (clearing) {
             view.showLoading();
         }
 
         HttpUtils.getInstance()
-                .create(ApiService.class,Api.ZHIHU_HISTORY)
+                .create(ApiService.class, Api.ZHIHU_HISTORY)
                 .getZhihuDaily(dateFomatter.ZhihuDailyDateFormat(date))
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Consumer<ZhihuDailyBean>() {
-            @Override
-            public void accept(ZhihuDailyBean zhihuDailyBean) throws Exception {
-                if (clearing) {
-                    list.clear();
-                }
-                for(ZhihuDailyBean.StoriesBean storiesBean:zhihuDailyBean.getStories()){
-                    list.add(storiesBean);
-                }
-                view.showResult(list);
-                view.stopLoading();
-            }
-        }, new Consumer<Throwable>() {
-            @Override
-            public void accept(Throwable throwable) throws Exception {
-                com.orhanobut.logger.Logger.d(throwable);
-                view.showError();
-                view.stopLoading();
-            }
-        });
+                    @Override
+                    public void accept(ZhihuDailyBean zhihuDailyBean) throws Exception {
+                        if (clearing) {
+                            list.clear();
+                        }
+                        for (ZhihuDailyBean.StoriesBean storiesBean : zhihuDailyBean.getStories()) {
+                            list.add(storiesBean);
+                        }
+                        view.showResult(list);
+                        view.stopLoading();
+                    }
+                }, new Consumer<Throwable>() {
+                    @Override
+                    public void accept(Throwable throwable) throws Exception {
+                        com.orhanobut.logger.Logger.d(throwable);
+                        view.showError();
+                        view.stopLoading();
+                    }
+                });
     }
 
     @Override
@@ -78,14 +79,14 @@ public class ZhihuDailyPresenter implements ZhihuDailyContract.Presenter {
 
     @Override
     public void loadMore(long date) {
-        requestData(date,false);
+        requestData(date, false);
     }
 
     @Override
     public void loadDetail(int position) {
         Intent intent = new Intent(mContext, WebViewDetailActivity.class);
         Logger.d(list.get(position).getId());
-        intent.putExtra("id",list.get(position).getId()+"");
+        intent.putExtra("id", list.get(position).getId() + "");
         intent.putExtra("type", BeanType.TYPE_ZHIHU);
         Logger.d(position);
         mContext.startActivity(intent);
@@ -93,6 +94,6 @@ public class ZhihuDailyPresenter implements ZhihuDailyContract.Presenter {
 
     @Override
     public void start() {
-        requestData(Calendar.getInstance().getTimeInMillis(),true);
+        requestData(Calendar.getInstance().getTimeInMillis(), true);
     }
 }

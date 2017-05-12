@@ -18,6 +18,7 @@ import com.sx.onereader.about.AboutActivity;
 import com.sx.onereader.base.BaseActivity;
 import com.sx.onereader.chat.ChatFragment;
 import com.sx.onereader.news.NewsFragment;
+import com.sx.onereader.searchbook.SearchBookActivity;
 import com.sx.onereader.setting.SettingActivity;
 import com.sx.onereader.todayofhistory.TodayOfHistoryFragment;
 import com.sx.onereader.todayofhistory.presenter.TodayOfHistoryPresenter;
@@ -92,7 +93,7 @@ public class MainActivity extends BaseActivity {
         actionBar.setTitle("新闻资讯");
         navigationView = (NavigationView) findViewById(R.id.main_nav_view);
 
-        View headerView =  navigationView.getHeaderView(0);
+        View headerView = navigationView.getHeaderView(0);
         CircleImageView circleImageView = (CircleImageView) headerView.findViewById(R.id.profile_image);
         circleImageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -120,6 +121,9 @@ public class MainActivity extends BaseActivity {
                     showWeatherFragment();
                 } else if (id == R.id.nav_settings) {
                     MainActivity.this.startActivity(new Intent(MainActivity.this, SettingActivity.class));
+                } else if (id == R.id.nav_search) {
+                    //扫码查书
+                    MainActivity.this.startActivity(new Intent(MainActivity.this, SearchBookActivity.class));
                 }
                 return true;
             }

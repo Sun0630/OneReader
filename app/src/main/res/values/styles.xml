@@ -23,6 +23,15 @@
         <item name="android:windowIsTranslucent">true</item>
     </style>
 
+    <!--图书列表卡片-->
+    <style name="CardView.Content" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
     <style name="Theme.AppTheme.Light" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Material Theme -->
         <item name="colorPrimary">@color/primary</item>
@@ -69,5 +78,12 @@
         <item name="android:textColor">@android:color/white</item>
     </style>
 
+
+    <!-- ToolBar菜单样式 -->
+    <style name="ToolbarTheme" parent="AppBaseTheme">
+        <item name="actionMenuTextColor">@color/white</item> <!--  敲定颜色-->
+        <item name="android:textSize">18sp</item> <!--  搞掂字体大小-->
+    </style>
     <color name="md_white_1000">#ffffff</color>
+    <color name="white">#ffffff</color>
 </resources>

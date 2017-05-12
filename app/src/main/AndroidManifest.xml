@@ -16,6 +16,7 @@
             android:value="4b02511105c3f100afa522417e7a5607"
             >
         </meta-data>
+        <!--选择城市页面-->
         <activity
             android:name="com.zaaach.citypicker.CityPickerActivity"
             android:screenOrientation="portrait"
@@ -41,28 +42,41 @@
             >
 
         </activity>
+        <!--详情页面-->
         <activity
             android:name="com.sx.onereader.detail.DetailActivity"
             android:theme="@style/Root.Theme.AppTheme.Light"
             />
+        <!--关于界面-->
         <activity
             android:name="com.sx.onereader.about.AboutActivity"
             android:theme="@style/Root.Theme.AppTheme.Light"
             />
 
+        <!--定位服务-->
         <service android:name="com.amap.api.location.APSService"></service>
-
+        <!--历史上的浸提-->
         <activity
             android:name="com.sx.onereader.todayofhistory.TodayOfHistoryDetailActivity"
             android:theme="@style/Root.Theme.AppTheme.Light"
             />
+        <!--设置页面-->
         <activity
             android:name="com.sx.onereader.setting.SettingActivity"
             android:theme="@style/Root.Theme.AppTheme.Light"
             />
+        <!--新闻详情页-->
         <activity
             android:name="com.sx.onereader.webview.WebViewDetailActivity"
             android:theme="@style/Root.Theme.AppTheme.Light"
+            />
+        <!--扫码查书-->
+        <activity
+            android:name=".searchbook.SearchBookActivity"
+            />
+        <!--图书详情页-->
+        <activity
+            android:name=".searchbook.BookInfoActivity"
             />
     </application>
 
@@ -84,7 +98,6 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
     <!--用于申请调用A-GPS模块-->
     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"></uses-permission>
-    <!--用于申请获取蓝牙信息进行室内定位-->
-    <uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 </manifest>

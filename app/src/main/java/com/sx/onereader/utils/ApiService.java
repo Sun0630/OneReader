@@ -2,6 +2,7 @@ package com.sx.onereader.utils;
 
 import com.sx.onereader.chat.bean.ChatBean;
 import com.sx.onereader.news.bean.NewsBean;
+import com.sx.onereader.searchbook.bean.ISBNBookBean;
 import com.sx.onereader.todayofhistory.bean.TodayOfHistoryBean;
 import com.sx.onereader.todayofhistory.bean.TodayOfHistoryDetailBean;
 import com.sx.onereader.weather.bean.WeatherBean;
@@ -36,11 +37,8 @@ public interface ApiService {
     Observable<String> getGuoKrDetail(
             @Path("id") String id);
 
-//    @GET("text.from?key=ae240f7fba620fc370b803566654949e")
-//    Observable<JokerBean> getJokerData(
-//            @Query("page") int page,
-//            @Query("pagesize") int pagesize
-//    );
+    @GET("{isbn}")
+    Observable<ISBNBookBean> getBookInfo(@Path("isbn") String isbn);
 
     @GET("toh?v=&key=02351f897b139cc86e39a225aaeaa42d")
     Observable<TodayOfHistoryBean> getTodayOfHistoryData(
