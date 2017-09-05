@@ -2,9 +2,7 @@ package com.sx.onereader.zhihuguokr.zhihudaily.bean;
 
 import java.util.List;
 
-/**
- * Created by w77996 on 2017/3/11.
- */
+
 public class ZhihuDailyBean {
 
     /**

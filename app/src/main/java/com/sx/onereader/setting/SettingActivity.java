@@ -19,12 +19,7 @@ import com.sx.onereader.base.BaseActivity;
 import com.sx.onereader.utils.GlideCacheUtils;
 import com.sx.onereader.utils.ThemeUtils;
 
-/**
- * time:2017/3/29
- * Created by w77996
- * Github:https://github.com/w77996
- * CSDN:http://blog.csdn.net/w77996?viewmode=contents
- */
+
 public class SettingActivity extends BaseActivity {
     private Toolbar mToolbar;
     private TextView mTextViewCache;

@@ -11,12 +11,7 @@ import com.bumptech.glide.load.engine.cache.InternalCacheDiskCacheFactory;
 import java.io.File;
 import java.math.BigDecimal;
 
-/**
- * time:2017/3/29
- * Created by w77996
- * Github:https://github.com/w77996
- * CSDN:http://blog.csdn.net/w77996?viewmode=contents
- */
+
 public class GlideCacheUtils {
     private static GlideCacheUtils inst;
 

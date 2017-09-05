@@ -24,9 +24,7 @@ import org.jsoup.select.Elements;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by hua on 2016/3/7.
- */
+
 @SuppressLint("ValidFragment")
 public class Commentsfragment extends Fragment {
     private ListView commentsListView;

@@ -11,9 +11,7 @@ import android.widget.TextView;
 
 import com.sx.onereader.R;
 
-/**
- * Created by hua on 2016/3/7.
- */
+
 @SuppressLint("ValidFragment")
 public class ReviewsFragment extends Fragment {
     private TextView tv;

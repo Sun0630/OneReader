@@ -10,10 +10,7 @@ import com.sx.onereader.R;
 import com.sx.onereader.utils.ThemeUtils;
 
 
-/**
- * Simple RecyclerView Divider
- * Created by tangqi on 9/16/15.
- */
+
 public class RecyclerViewItemDecoration extends RecyclerView.ItemDecoration {
     private Drawable mDivider;
 

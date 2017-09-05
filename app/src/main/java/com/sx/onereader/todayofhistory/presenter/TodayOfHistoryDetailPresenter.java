@@ -12,12 +12,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
-/**
- * time:2017/3/28
- * Created by w77996
- * Github:https://github.com/w77996
- * CSDN:http://blog.csdn.net/w77996?viewmode=contents
- */
+
 public class TodayOfHistoryDetailPresenter implements TodayOfHistoryDetailContract.Presenter {
 
     private  Context context;
